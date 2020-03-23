@@ -98,9 +98,9 @@ const authMiddleWare = require("./auth/middleware");
  */
 
 // GET endpoint for testing purposes, can be removed
-app.get("/", (req, res) => {
-  res.send("Hi from express");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hi from express");
+// });
 
 // POST endpoint for testing purposes, can be removed
 app.post("/echo", (req, res) => {
@@ -127,6 +127,9 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
     }
   });
 });
+
+const homeRouter = require("./routers/home");
+app.use("/", homeRouter);
 
 const authRouter = require("./routers/auth");
 app.use("/", authRouter);
