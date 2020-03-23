@@ -7,6 +7,8 @@ module.exports = {
       [
         {
           title: "test-homepage",
+          backgroundColor: "#AAAAAA",
+          color: '222222',
           description: "test is the best",
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -14,6 +16,8 @@ module.exports = {
         },
         {
           title: "dummy-homepage",
+          backgroundColor: "#AAAA00",
+          color: '2222AA',
           description: "dummy is the best",
           createdAt: new Date(),
           updatedAt: new Date(),
